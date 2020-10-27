@@ -19,6 +19,7 @@ export default class App extends React.Component {
   initAnswer = () => {
     const initDataset = this.state.dataset[this.state.currentId];
     const initAnswers = initDataset.answers;
+
     this.setState({
       answers: initAnswers
     })
@@ -32,7 +33,7 @@ export default class App extends React.Component {
     return (
       <section className="c-section">
         <div className="c-box">
-          <AnswersList answers={this.state.answers}/>
+          <AnswersList answers={this.state.answers} />
         </div>
       </section>
     );
