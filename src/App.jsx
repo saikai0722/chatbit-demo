@@ -1,5 +1,5 @@
 import React from 'react';
-import defaultDataset from "./dataset";
+import defaultDataset from './dataset';
 import './assets/styles/style.css';
 import {AnswersList} from "./components/index";
 
@@ -11,7 +11,7 @@ export default class App extends React.Component {
       answers: [],
       chats: [],
       currentId: "init",
-      detaset: {},
+      detaset: defaultDataset,
       open: false
     }
   }
